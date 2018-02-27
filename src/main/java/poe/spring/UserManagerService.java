@@ -25,7 +25,7 @@ public class UserManagerService {
 		Boolean loginsize = loginCreationDelegate.loginsize(login);
 		Boolean loginForbidden = loginCreationDelegate.loginForbidden(login);
 
-		if (loginsize == true & loginForbidden == true & userRepository.findByLogin(login) == null) {
+		if (loginsize == true && loginForbidden == true && userRepository.findByLogin(login) == null) {
 			userRepository.save(user);
 		}
 		else {

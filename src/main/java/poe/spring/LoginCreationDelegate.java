@@ -8,7 +8,7 @@ public class LoginCreationDelegate {
 	public boolean loginsize(String login) {
 		Boolean loginsize = false;
 
-		if (login.length() > 3 & login.length() < 11) {
+		if (login.length() > 3 && login.length() < 11) {
 			loginsize = true; }
 
 		return loginsize;

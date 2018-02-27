@@ -16,8 +16,6 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 @Table(name = "trajet")
 public class Trajet {
 
-	public Trajet() {
-	}
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;

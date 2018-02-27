@@ -2,7 +2,7 @@ package poe.spring;
 
 import java.util.Date;
 
-import javax.persistence.ManyToOne;
+
 
 import org.springframework.format.annotation.DateTimeFormat;
 

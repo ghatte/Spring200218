@@ -16,12 +16,12 @@
 			value="Rechercher" tabindex="5" type="submit" /></td>
 
 
-		<div th:each="trajet : ${trajets}">
-			<div th:text="${trajet.Depart}"></div>
-			<div th:text="${trajet.Arrive}"></div>
-			<div th:text="${trajet.date}"></div>
-			<div th:text="${trajet.Place}"></div>
-			<div th:text="${trajet.prix}"></div>
+		<div th:each="trajet : ${trajets3}">
+			<div th:text="${trajet3.Depart}"></div>
+			<div th:text="${trajet3.Arrive}"></div>
+			<div th:text="${trajet3.date}"></div>
+			<div th:text="${trajet3.Place}"></div>
+			<div th:text="${trajet3.prix}"></div>
 			<hr />
 		</div>
 	</form>

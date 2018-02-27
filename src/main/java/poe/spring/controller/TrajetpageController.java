@@ -1,6 +1,6 @@
 package poe.spring.controller;
 
-import java.util.Date;
+
 import java.util.List;
 
 import javax.validation.Valid;
@@ -9,13 +9,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
+
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import poe.spring.LoginForm;
+
 import poe.spring.Trajet;
 import poe.spring.TrajetForm;
 import poe.spring.TrajetManagerService;
@@ -55,7 +55,7 @@ public class TrajetpageController {
 	@GetMapping("/user")
 	public String list2(Long id, Model model) {
 		List<Trajet> list = trajetManagerService.listid(id);
-		model.addAttribute("trajets", list);
+		model.addAttribute("trajets2", list);
 		return "/trajet/user";
 
 	}
@@ -68,7 +68,7 @@ public class TrajetpageController {
 	@PostMapping(path = "/search")
 	public String list3(@RequestParam(required = false) String ville, Model model ) {
 		List<Trajet> list = trajetRepository.findByDepartLike(ville);
-		model.addAttribute("trajets", list);
+		model.addAttribute("trajets3", list);
 		return "/trajet/search";
 				
 	}
